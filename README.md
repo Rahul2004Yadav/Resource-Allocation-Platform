@@ -210,6 +210,9 @@ Use the **Demo Admin / Demo User** quick-fill buttons on the login page.
 - **JWT stateless auth** allows the frontend and backend to be deployed independently.
 - **Atomic inventory updates** — available_quantity is only decremented at issue time (not at approval), so approved-but-not-yet-issued bookings do not block other approvals. This mirrors real-world practice.
 - **Audit middleware pattern** — every state-changing route logs to `audit_logs` before the transaction closes, ensuring the log and the action are always consistent.
+
+
+
 Website link:
 https://silly-sprinkles-dabb85.netlify.app/
 
